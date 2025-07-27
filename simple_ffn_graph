@@ -1,0 +1,66 @@
+digraph {
+	graph [size="12,12"]
+	node [align=left fontname=monospace fontsize=10 height=0.2 ranksep=0.1 shape=box style=filled]
+	4728783328 [label="
+ (1)" fillcolor=darkolivegreen1]
+	4725358208 [label=ViewBackward0]
+	4725210464 -> 4725358208
+	4725210464 [label=AddmmBackward0]
+	4728736304 -> 4725210464
+	4728783088 [label="fc3.bias
+ (1)" fillcolor=lightblue]
+	4728783088 -> 4728736304
+	4728736304 [label=AccumulateGrad]
+	4728736448 -> 4725210464
+	4728736448 [label=ViewBackward0]
+	4724737120 -> 4728736448
+	4724737120 [label=TanhBackward0]
+	4728736400 -> 4724737120
+	4728736400 [label=ViewBackward0]
+	4728736736 -> 4728736400
+	4728736736 [label=AddmmBackward0]
+	4728736832 -> 4728736736
+	4728782928 [label="fc2.bias
+ (128)" fillcolor=lightblue]
+	4728782928 -> 4728736832
+	4728736832 [label=AccumulateGrad]
+	4728736880 -> 4728736736
+	4728736880 [label=ViewBackward0]
+	4728736928 -> 4728736880
+	4728736928 [label=TanhBackward0]
+	4728737024 -> 4728736928
+	4728737024 [label=ViewBackward0]
+	4728737120 -> 4728737024
+	4728737120 [label=AddmmBackward0]
+	4728737360 -> 4728737120
+	4728580416 [label="fc1.bias
+ (128)" fillcolor=lightblue]
+	4728580416 -> 4728737360
+	4728737360 [label=AccumulateGrad]
+	4728737456 -> 4728737120
+	4728737456 [label=TBackward0]
+	4728737600 -> 4728737456
+	4728579936 [label="fc1.weight
+ (128, 1)" fillcolor=lightblue]
+	4728579936 -> 4728737600
+	4728737600 [label=AccumulateGrad]
+	4728736592 -> 4728736736
+	4728736592 [label=TBackward0]
+	4728737072 -> 4728736592
+	4728584576 [label="fc2.weight
+ (128, 128)" fillcolor=lightblue]
+	4728584576 -> 4728737072
+	4728737072 [label=AccumulateGrad]
+	4728736496 -> 4725210464
+	4728736496 [label=TBackward0]
+	4728736688 -> 4728736496
+	4728783008 [label="fc3.weight
+ (1, 128)" fillcolor=lightblue]
+	4728783008 -> 4728736688
+	4728736688 [label=AccumulateGrad]
+	4725358208 -> 4728783328
+	4728787008 [label="
+ (1, 1)" fillcolor=darkolivegreen3]
+	4725210464 -> 4728787008
+	4728787008 -> 4728783328 [style=dotted]
+}
